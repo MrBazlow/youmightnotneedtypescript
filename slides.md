@@ -1334,6 +1334,29 @@ And as JSDoc is just comments, i'll leave you with the words of German Mathmatic
 }
 ```
 
+<v-click>
+  <img v-motion :initial="{ x: 300 }" :enter="{ x: 0, duration: 1000 }" class="qr-code" src="/assets/qrcode_c2.svg">
+  <span v-motion :initial="{ y: 100 }" :enter="{ y: 0, duration: 1000 }" class="slide-link">https://github.com/MrBazlow/youmightnotneedtypescript</span>
+</v-click>
+
+<style>
+  .qr-code {
+    position: absolute;
+    background-color: white;
+    height: 300px;
+    width: 300px;
+    bottom: 1rem;
+    right: 2rem;
+    clip-path: inset(30px 30px 30px 30px round 20px);
+  }
+
+  .slide-link {
+    position: absolute;
+    bottom: 0.75rem;
+    right: 3.75rem;
+  }
+</style>
+
 <!--
 
 Thank you
